@@ -11,13 +11,8 @@ pipelineJob('jobprueba3') {
                 }
             }
         }
-        triggers {
-            scm('* 8-17 * * *')
-        }
-        steps{
-            dsl{
-                external('jenkinsfile')
-            }
+    triggers {
+        scm('* 8-17 * * *')
         }
     }
 }
