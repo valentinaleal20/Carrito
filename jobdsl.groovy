@@ -12,4 +12,7 @@ pipelineJob('jobprueba3') {
             }
         }
     }
+    triggers {
+        scm('H 8-18 * * 1-5')
+    }
 }
