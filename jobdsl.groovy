@@ -5,19 +5,19 @@ pipelineJob('jobprueba3') {
                 git {
                     remote {
                         url('https://github.com/valentinaleal20/applicacionjenkinsfile.git')
-                    }
-                    branches('main')
+                    }       
+                    branch('main')          
                     scriptPath('jenkinsfile')
                 }
             }
         }
-    }
-    triggers {
-        scm('H 8-18 * * 1-5')
-    }
-    stage{
-        dsl(
-            external('Jenkinsfile')
-        )
+        triggers {
+            scm('* 8-17 * * *')
+        }
+        steps{
+            dsl{
+                external('jenkinsfile')
+            }
+        }
     }
 }
