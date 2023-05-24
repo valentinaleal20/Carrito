@@ -6,7 +6,7 @@ pipelineJob('jobprueba3') {
                     remote {
                         url('https://github.com/valentinaleal20/applicacionjenkinsfile.git')
                     }       
-                    branch('main')          
+                    branch('feature')          
                     scriptPath('jenkinsfile')
                 }
             }
