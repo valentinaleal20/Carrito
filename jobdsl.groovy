@@ -4,7 +4,7 @@ pipelineJob('jobprueba3') {
             scm {
                 git {
                     remote {
-                        url('https://github.com/valentinaleal20/applicacionjenkinsfile.git')
+                        url('https://github.com/valentinaleal20/aplicacionjenkinsfile.git')
                     }       
                     branch('feature')          
                     scriptPath('jenkinsfile')
